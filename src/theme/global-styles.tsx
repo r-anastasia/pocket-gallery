@@ -12,7 +12,7 @@ export const globalStyles = (
       body {
         padding: 0;
         margin: 0;
-        background: #1e3b29;
+        background: #1a3c27;
         min-height: 100vh;
         line-height: 1.5;
         scroll-behavior: smooth;

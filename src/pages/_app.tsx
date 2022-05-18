@@ -3,9 +3,9 @@ import { SWRConfig } from 'swr'
 import { appWithTranslation } from 'next-i18next'
 // local libs
 import { globalStyles, theme } from 'src/theme'
-import { Header } from 'src/components/layouts/Header'
 // types
 import type { AppProps } from 'next/app'
+import { BaseLayout } from 'src/components/layouts/BaseLayout'
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,8 +18,9 @@ function App({ Component, pageProps }: AppProps) {
               fetch(resource, init).then((res) => res.json()),
           }}
         >
-          <Header />
-          <Component {...pageProps} />
+          <BaseLayout>
+            <Component {...pageProps} />
+          </BaseLayout>
         </SWRConfig>
       </ThemeProvider>
     </>

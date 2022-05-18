@@ -1,16 +1,16 @@
 const colors = {
-  basic: '#1E3B29',
+  basic: '#1a3c27',
   basicLight: '#E8E2D6',
   accent: {
     200: '#FFFFFF',
-    100: '#DC482A',
+    100: '#d53414',
   },
 } as const
 
 const textColors = {
   basic: '#FFFFFF',
-  inverted: '#1E3B29',
-  accent: '#DC482A',
+  inverted: '#1a3c27',
+  accent: '#d53414',
 } as const
 
 const fontSize = {

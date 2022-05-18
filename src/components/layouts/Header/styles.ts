@@ -1,6 +1,10 @@
 import styled from '@emotion/styled'
 
 export const HeaderContainer = styled.div`
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+
   width: 100%;
   margin-top: ${({ theme }) => theme.indents.l};
 

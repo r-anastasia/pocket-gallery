@@ -1,5 +1,11 @@
 // local libs
+import { FirstScreen } from './FirstScreen'
+import { ContentContainer } from './styles'
 
 export const Content = () => {
-  return <h1>Hello Привет</h1>
+  return (
+    <ContentContainer>
+      <FirstScreen />
+    </ContentContainer>
+  )
 }
